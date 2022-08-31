@@ -12,13 +12,26 @@
         <h1>Converter Temperatura</h1>
     </header>
         <section>
-            <div>
-               <p>Valor Inicial</p><input type="number" name="temp1" id="temp1">
-               -> <input type="number" name="temp2" id="temp2"> 
-               <input type="button" value="Transformar">
+            <div id="conteudo">
+               <p>Valor Inicial</p>
+               <input type="number" name="tempx" id="temp1"></br>
+                <select name="lista" id="lista">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+
+                <p>Nova Escala</p>
+                <select name="lista2" id="lista2">
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+               
+               <input type="button" value="Transformar" onclick="converter()">
             </div>
-            <div>
-                Informe um Valor
+            <div id="resp">
+            </br>Informe um Valor
             </div>
         </section>
     <footer>
